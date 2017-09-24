@@ -1,0 +1,33 @@
+[{
+        "fields": {
+            "name": "Corporate",
+            "population": 100
+        },
+        "model": "web.country",
+        "pk": 0
+    },
+    {
+        "fields": {
+            "name": "Downtown",
+            "population": 200
+        },
+        "model": "web.country",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "Corporate Again",
+            "population": 1000
+        },
+        "model": "web.country",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "Downtown Again",
+            "population": 2000
+        },
+        "model": "web.country",
+        "pk": 3
+    }
+]
