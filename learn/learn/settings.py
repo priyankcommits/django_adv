@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'web',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'django_extensions'
+    'django_extensions',
+    'graphene_django',
+    'papertrail',
+    'reversion'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+GRAPHENE = {
+    "SCHEMA": "learn.schema.schema"
+}

@@ -13,15 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
-from django.contrib import admin
+from django.conf.urls import url
 
-from graphene_django.views import GraphQLView
-from learn.schema import schema
+from web.views import paper_trail_example
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^about/', include('django.contrib.flatpages.urls')),
-    url(r'^graphql', GraphQLView.as_view(graphiql=True, schema=schema)),
-    url('', include('web.urls', namespace='web')),
+    url(r'^papertrail/', paper_trail_example, name="paper_trail_example"),
 ]
